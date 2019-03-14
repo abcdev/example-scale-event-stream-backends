@@ -1,26 +1,25 @@
 version: '3'
 services:
 
-  # You need to build the image yourself -> websocket-backend folder
   backend1:
-
-    image: "websocket-backend"
+    build:
+      context: ./websocket-backend
     links:
     - kafka
     depends_on:
       - kafka
 
   backend2:
-
-    image: "websocket-backend"
+    build:
+      context: ./websocket-backend
     links:
     - kafka
     depends_on:
     - kafka
 
   backend3:
-
-    image: "websocket-backend"
+    build:
+      context: ./websocket-backend
     links:
     - kafka
     depends_on:
