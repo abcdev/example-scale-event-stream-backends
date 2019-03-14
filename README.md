@@ -27,11 +27,11 @@ In this publish subscribe scenario the challenge is to router the messages for t
 * Docker Compose
 * Gradle
 
-### Build
+### Build (Skip if you don't need it)
 
 ```bash
 cd websocket-backend
-./gradlew build bootJar && docker build --tag websocket-backend .
+./gradlew build bootJar
 cd ..
 ```
 
